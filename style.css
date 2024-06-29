@@ -1,0 +1,614 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: black;
+}
+.main {
+  background-image: url("Assets/bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  /* background-size: max(1200px, 100vw); */
+  background-repeat: no-repeat;
+  height: 75vh;
+  position: relative;
+}
+.box {
+  height: 75vh;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  background-color: black;
+  opacity: 0.7;
+  background-size: cover;
+}
+nav {
+  max-width: 80vw;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  position: relative;
+  top: 20px;
+  z-index: 10;
+}
+#logo-netflix {
+  position: relative;
+  width: 150px;
+  top: 20px;
+  z-index: 10;
+}
+nav button {
+  position: relative;
+  color: white;
+  top: 20px;
+  z-index: 10;
+}
+#language {
+  background-color: black;
+  opacity: 0.8;
+  width: 85px;
+  padding: 2px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 7px;
+  border: 0.2px solid white;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#sign-in {
+  width: 85px;
+  /* height: 3vh; */
+  padding: 6px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: rgb(229, 9, 20);
+  color: white;
+  font-weight: bold;
+  font-size: 11px;
+  border: 0px;
+  cursor: pointer;
+}
+.main-text {
+  font-family: "Martel Sans", sans-serif;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding: 0 30px;
+  gap: 23px;
+}
+
+.main-text > :nth-child(1) {
+  /* padding: 30px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-weight: bolder;
+  font-size: 48px; */
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 48px;
+  text-align: center;
+}
+.main-text > :nth-child(2) {
+  /* padding: 30px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-size: 24px;
+  font-weight: 700; */
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+.main-text > :nth-child(3) {
+  /* padding: 30px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-size: 20px;
+  font-weight: 400; */
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+#email-input {
+  color: white;
+  width: 360px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 12px;
+  padding-right: 5px;
+  border-radius: 5px;
+  margin-right: 5px;
+  border: 1px solid white;
+  background-color: black;
+  opacity: 0.6;
+}
+#get-started {
+  padding-top: 11px;
+  padding-bottom: 13px;
+  width: 200px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: rgb(229, 9, 20);
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: 0px;
+  cursor: pointer;
+}
+.seperator {
+  height: 8px;
+  background-color: rgb(46, 44, 44);
+  position: relative;
+  z-index: 20;
+}
+
+.first {
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  max-width: 70vw;
+  margin: auto;
+  color: white;
+  align-items: center;
+}
+.first > div {
+  display: flex;
+  flex-direction: column;
+}
+.content-first > :nth-child(1) {
+  font-size: 48px;
+  font-weight: bolder;
+}
+.content-first > :nth-child(2) {
+  font-size: 24px;
+}
+.screenSection {
+  position: relative;
+}
+.screenSection > img {
+  width: 555px;
+  position: relative;
+  z-index: 1;
+}
+.screenSection > video {
+  top: 60px;
+  position: absolute;
+}
+#apple-screen {
+  position: absolute;
+  top: 45px;
+  /* right: 150px; */
+  left: 109px;
+  width: 330px;
+}
+.second {
+  height: 65vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  max-width: 70vw;
+  margin: auto;
+  color: white;
+  align-items: center;
+}
+.second > div {
+  display: flex;
+  flex-direction: column;
+}
+.content-second > :nth-child(1) {
+  font-size: 48px;
+  font-weight: bolder;
+}
+.content-second > :nth-child(2) {
+  font-size: 24px;
+}
+@media screen and (max-width: 770px) {
+  #logo-netflix {
+    position: relative;
+    width: 110px;
+    top: 20px;
+    z-index: 10;
+  }
+  .main-text {
+    font-family: "Martel Sans", sans-serif;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 0 10px;
+    gap: 10px;
+  }
+  .main-text > :nth-child(1) {
+    /* padding: 30px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-weight: bolder;
+  font-size: 48px; */
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+  }
+  .main-text > :nth-child(2) {
+    /* padding: 30px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-size: 24px;
+  font-weight: 700; */
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+  }
+  .main-text > :nth-child(3) {
+    /* padding: 30px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-size: 20px;
+  font-weight: 400; */
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1115px) {
+  .first {
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+  }
+  .first > div {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-first > :nth-child(1) {
+    font-size: 40px;
+    font-weight: bolder;
+  }
+  .content-first > :nth-child(2) {
+    font-size: 22px;
+  }
+  .screenSection {
+    position: relative;
+  }
+  .screenSection > img {
+    width: 450px;
+    position: relative;
+    z-index: 1;
+  }
+  .screenSection > video {
+    width: 425px;
+    top: 60px;
+    position: absolute;
+  }
+  #apple-screen {
+    position: absolute;
+    top: 32px;
+    /* right: 150px; */
+    left: 80px;
+    width: 290px;
+  }
+  .second {
+    height: 65vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+  }
+  .second > div {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-second > :nth-child(1) {
+    font-size: 40px;
+    font-weight: bolder;
+  }
+  .content-second > :nth-child(2) {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 938px) {
+  .first {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+  }
+  .first > div {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-first > :nth-child(1) {
+    font-size: 40px;
+    font-weight: bolder;
+  }
+  .content-first > :nth-child(2) {
+    font-size: 22px;
+  }
+  .screenSection {
+    position: relative;
+  }
+  .screenSection > img {
+    width: 450px;
+    position: relative;
+    z-index: 1;
+  }
+  .screenSection > video {
+    width: 425px;
+    top: 60px;
+    position: absolute;
+  }
+  #apple-screen {
+    position: absolute;
+    top: 32px;
+    /* right: 150px; */
+    left: 80px;
+    width: 290px;
+  }
+  .second {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+  }
+  .second > div {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-second > :nth-child(1) {
+    font-size: 40px;
+    font-weight: bolder;
+  }
+  .content-second > :nth-child(2) {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 665px) {
+  .main-inp-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #email-input {
+    margin-bottom: 10px;
+  }
+  .screenSection > img {
+    width: 400px;
+    position: relative;
+    z-index: 1;
+  }
+  .screenSection > video {
+    top: 50px;
+    width: 350px;
+    position: absolute;
+  }
+  #apple-screen {
+    position: absolute;
+    top: 25px;
+    /* right: 150px; */
+    left: 70px;
+    width: 250px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .content-first > :nth-child(1) {
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  .content-first > :nth-child(2) {
+    font-size: 15px;
+  }
+  .content-second > :nth-child(1) {
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  .content-second > :nth-child(2) {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 550px) {
+  #email-input {
+    width: 260px;
+  }
+  #get-started {
+    width: 150px;
+    font-size: 14px;
+    padding-bottom: 11px;
+  }
+  #tv-image {
+    width: 330px;
+  }
+  #tv-vid {
+    top: 35px;
+    width: 300px;
+  }
+  #apple-screen-img {
+    width: 330px;
+  }
+  #apple-screen {
+    /* position: absolute; */
+    width: 210px;
+    left: 63px;
+    top: 18px;
+  }
+  #mob {
+    width: 450px;
+  }
+  #child {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 486px) {
+  #mob {
+    width: 350px;
+  }
+  #child {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #logo-netflix {
+    width: 90px;
+  }
+  #language {
+    width: 55px;
+  }
+  #sign-in {
+    width: 55px;
+  }
+}
+@media screen and (max-width: 390px) {
+  #mob {
+    width: 295px;
+  }
+  #child {
+    width: 295px;
+  }
+}
+.faq h2 {
+  text-align: center;
+  font-size: 48px;
+}
+
+.faq {
+  background: black;
+  color: white;
+  padding: 34px;
+}
+
+.faqbox:hover {
+  background-color: #414141;
+  color: white;
+}
+
+.faqbox svg {
+  filter: invert(1);
+}
+
+.faqbox {
+  transition: all 0.5s ease-out;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2d2d2d;
+  padding: 24px;
+  max-width: 60vw;
+  margin: 34px auto;
+  cursor: pointer;
+}
+
+footer {
+  color: white;
+  max-width: 60vw;
+  margin: auto;
+  padding: 60px;
+}
+
+footer .questions {
+  padding: 34px 0;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+.footer a {
+  font-size: 14px;
+  color: white;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+@media screen and (max-width: 850px) {
+  .faq h2 {
+    font-size: 40px;
+  }
+  #faq-ques {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .faq h2 {
+    font-size: 35px;
+  }
+  #faq-ques {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .faq h2 {
+    font-size: 30px;
+  }
+  #faq-ques {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .faq h2 {
+    font-size: 25px;
+  }
+  #faq-ques {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 975px) {
+  #footer-links {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 850px) {
+  #footer-links {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 680px) {
+  #footer-links {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 975px) {
+  #footer-links {
+    font-size: 12px;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 0.8fr) !important;
+    gap: 3rem;
+    color: white;
+  }
+}
